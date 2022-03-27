@@ -6,7 +6,7 @@ import hello.core.member.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component/*(service) bean name 충돌 */
 public class OrderServiceImpl implements OrderService{
 
     private final MemberRepository memberRepository;
