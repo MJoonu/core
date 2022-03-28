@@ -31,6 +31,7 @@ public class AppConfig {
     public OrderService orderService(){
         System.out.println("call AppConfig.orderService");
         return new OrderServiceImpl(memberRepository(),discountPolicy());
+        //필드 주입시 생성자가 없기 때문에 return 문을 주석처리해야함
     }
 
     @Bean
