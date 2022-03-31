@@ -18,8 +18,8 @@ public class AutoAppConfig {
     // 수동 빈 등록과 자동빈 등록의 경우 자동빈이 override 되면서
     // 수동빈을 우선적으로 등록되게 만든다.
     // 최근 부트에서는 수동 빈 자동빈이 충돌하면 override 되는 것이 아닌 그냥 튕기게 수정되었다.
-    @Bean(name = "memoryMemberRepository")
-    MemberRepository memberRepository(){
-        return new MemoryMemberRepository();
-    }
+//    @Bean(name = "memoryMemberRepository")
+//    MemberRepository memberRepository(){
+//        return new MemoryMemberRepository();
+//    }
 }
