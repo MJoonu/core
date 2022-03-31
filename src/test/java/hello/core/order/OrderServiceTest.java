@@ -29,5 +29,11 @@ public class OrderServiceTest {
 
         Order order = orderService.createOrder(memberId, "itemA", 10000);
         Assertions.assertThat(order.getDiscountPrice()).isEqualTo(1000);
+//            OrderServiceImpl orderService = new OrderServiceImpl();
+//            orderService.createOrder(1L, "itemA", 10000);
+        // OrderServiceImpl 의 생성자를 수정자로 변경학고 진행한 테스트
+        // 생성자 주입을 살려서 진행하면 new OrderServiceImpl(에러); 가 나오는데
+        // 여기서 뭐가 필요한지 바로 나오기 때문에 테스트 진행이 가능하다.
+        // 값은 nullpointException
     }
 }
